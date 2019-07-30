@@ -1,6 +1,7 @@
 ## FOODIE-FREAK
 
 Browse the your food recipe from a collection of trusted comfort food recipes! 
+## Live at : https://food-freek-bisht-ruchir-7.netlify.com/
 
 ## Available Scripts
 

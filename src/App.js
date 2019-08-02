@@ -37,7 +37,7 @@ const App = () =>{
     <div className="App">
       <p className="heading">THE-FOODIE-FREAK</p>
       <Ruchir/>
-      <p className="t2">Browse the your food recipe from a collection of trusted comfort food recipes! </p>
+      <p className="t2">Browse your food recipe from a collection of trusted comfort food recipes! </p>
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="ENTER A DISH eg: Chicken"/>
         <button  className="search-button mx-2">

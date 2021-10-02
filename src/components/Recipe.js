@@ -1,29 +1,14 @@
 import React from 'react';
+import RecipeItem from './RecipeItem';
 
-const Recipe = ({ title, calories, image, ingredients, dietLabels, totalWeight }) => {
+const Recipe = ({ recipes }) => {
 	return (
-		<div className='recipeitem'>
-			<div className='ingr'>
-				<u>
-					<h1 className='dishname'>{title}</h1>
-				</u>
-				<img src={image} className='figure-img img-fluid rounded img-thumbnail' alt='...' />
-
-				<p className='t1'>Ingredients : </p>
-				{ingredients.map((ingredient) => (
-					<p className='t2'>{ingredient.text}</p>
-				))}
-
-				<p className='t1'>
-					Calories : <h4>{calories}</h4>
-				</p>
-				<p className='t1'>
-					Diet Label :<h4>{dietLabels[0]}</h4>
-				</p>
-				<p className='t1'>
-					Total Wieght :<h4>{totalWeight} gms</h4>
-				</p>
-			</div>
+		<div className='row mx-0'>
+			{recipes.map((recipe) => {
+				const foodItem = recipe.recipe;
+				// console.log(foodItem);
+				return <RecipeItem key={foodItem.label} recipe={foodItem} />;
+			})}
 		</div>
 	);
 };

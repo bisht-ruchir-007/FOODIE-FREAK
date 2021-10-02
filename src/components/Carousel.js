@@ -7,14 +7,14 @@ const Ruchir = () => {
 	return (
 		<div id='carouselExampleInterval' className='carousel slide' data-ride='carousel'>
 			<div className='carousel-inner'>
-				<div className='carousel-item active' data-interval='10000'>
-					<img src={Img1} className='w-50 ' alt='...' />
+				<div className='carousel-item active' data-interval='6000'>
+					<img src={Img1} className='rounded my-img' alt='...' />
 				</div>
-				<div className='carousel-item' data-interval='2000'>
-					<img src={Img2} className='w-50' alt='...' />
+				<div className='carousel-item' data-interval='6000'>
+					<img src={Img2} className=' rounded my-img' alt='...' />
 				</div>
-				<div className='carousel-item' data-interval='2000'>
-					<img src={Img3} className='w-50' alt='...' />
+				<div className='carousel-item' data-interval='6000'>
+					<img src={Img3} className='rounded my-img' alt='...' />
 				</div>
 			</div>
 			<a className='carousel-control-prev' href='#carouselExampleInterval' role='button' data-slide='prev'>
